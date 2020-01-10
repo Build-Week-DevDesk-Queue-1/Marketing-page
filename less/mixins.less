@@ -1,0 +1,64 @@
+// Mixins
+
+.flex() {
+	display: flex;
+	justify-content: center;
+}
+
+.h-1() {
+	font-size: 11.5rem;
+	word-spacing: 3.5rem;
+	color: @main-font-color;
+	font-weight: 500;
+}
+
+.h-2() {
+	font-size: 3.48rem;
+	color: @header-font-color;
+	font-weight: 600;
+	letter-spacing: 0.11rem;
+	word-spacing: 0.3rem;
+}
+
+.form-field (@form-background, @form-font-color, @form-border-color) {
+	width: 65rem;
+	padding: 1.2rem 0.4rem;
+	color: @form-font-color;
+	background-color: @form-background;
+	border: 0.4rem solid @button-background;
+	border-radius: 0.35rem;
+	font-size: 1.2rem;
+	transition: 0.2s linear;
+	transition-delay: 0.1s;
+	&:hover {
+		width: 66.5rem;
+		box-shadow: 0 0.5rem 1rem lighten(@form-border-color, 75%);
+		border-radius: 0.5rem;
+	}
+	&:focus {
+		width: 80rem;
+		height: 5.8rem;
+		border-radius: 0.5rem;
+		background-color: lighten(@form-border-color, 87%);
+	}
+}
+
+.button(@button-background, @button-font-color) {
+	width: 22rem;
+	padding: 1.4rem;
+	color: @button-font-color;
+	background-color: @button-background;
+	border: none;
+	border-radius: 0.9rem;
+	box-shadow: 0 0.4rem 1rem @button-background;
+	transition: 0.2s linear;
+	transition-delay: 0.1s;
+	&:hover {
+		width: 23rem;
+		text-shadow: 0 0.4rem 1rem @button-font-color;
+		background-color: darken(@main-font-color, 0%);
+		color: @button-font-color;
+		box-shadow: 0 1rem 2rem darken(@main-font-color, 0%);
+		cursor: pointer;
+	}
+}
