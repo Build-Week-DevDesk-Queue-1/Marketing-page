@@ -28,18 +28,21 @@
 	border: 0.4rem solid @button-background;
 	border-radius: 0.35rem;
 	font-size: 1.2rem;
-	transition: 0.2s linear;
-	transition-delay: 0.1s;
+
 	&:hover {
 		width: 66.5rem;
 		box-shadow: 0 0.5rem 1rem lighten(@form-border-color, 75%);
 		border-radius: 0.5rem;
+		transition: 0.2s linear;
+		transition-delay: 0.1s;
 	}
 	&:focus {
 		width: 80rem;
 		height: 5.8rem;
 		border-radius: 0.5rem;
 		background-color: lighten(@form-border-color, 87%);
+		transition: 0.2s linear;
+		transition-delay: 0.1s;
 	}
 }
 
@@ -51,8 +54,7 @@
 	border: none;
 	border-radius: 0.9rem;
 	box-shadow: 0 0.4rem 1rem @button-background;
-	transition: 0.2s linear;
-	transition-delay: 0.1s;
+
 	&:hover {
 		width: 23rem;
 		text-shadow: 0 0.4rem 1rem @button-font-color;
@@ -60,5 +62,7 @@
 		color: @button-font-color;
 		box-shadow: 0 1rem 2rem darken(@main-font-color, 0%);
 		cursor: pointer;
+		transition: 0.2s linear;
+		transition-delay: 0.1s;
 	}
 }
