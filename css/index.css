@@ -226,20 +226,22 @@ h2 {
   border: 0.4rem solid #000036;
   border-radius: 0.35rem;
   font-size: 1.2rem;
-  transition: 0.2s linear;
-  transition-delay: 0.1s;
   margin-right: 0.7rem;
 }
 .request-form input[type="email"]:hover {
   width: 66.5rem;
   box-shadow: 0 0.5rem 1rem #b5b5ff;
   border-radius: 0.5rem;
+  transition: 0.2s linear;
+  transition-delay: 0.1s;
 }
 .request-form input[type="email"]:focus {
   width: 80rem;
   height: 5.8rem;
   border-radius: 0.5rem;
   background-color: #f3f3ff;
+  transition: 0.2s linear;
+  transition-delay: 0.1s;
 }
 .request-form input[type="submit"] {
   width: 22rem;
@@ -249,8 +251,7 @@ h2 {
   border: none;
   border-radius: 0.9rem;
   box-shadow: 0 0.4rem 1rem #000036;
-  transition: 0.2s linear;
-  transition-delay: 0.1s;
+  cursor: pointer;
   margin-left: 0.7rem;
 }
 .request-form input[type="submit"]:hover {
@@ -259,7 +260,8 @@ h2 {
   background-color: #b91432;
   color: #fefefe;
   box-shadow: 0 1rem 2rem #b91432;
-  cursor: pointer;
+  transition: 0.2s linear;
+  transition-delay: 0.1s;
 }
 .request-form ::placeholder {
   color: #333333;
